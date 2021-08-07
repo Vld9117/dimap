@@ -1,0 +1,8 @@
+.mainPic {
+    background: url("../img/main.png") center;
+    background-size: cover;
+}
+
+.btn{
+    background-color: #a90013;
+}
