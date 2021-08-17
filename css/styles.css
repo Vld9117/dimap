@@ -6,14 +6,18 @@
 
 h1{
     font-size: 30px;
-    font-weight: bold;
+    font-family: 'Roboto',Arial,sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
     padding: 10px 24px;
     text-shadow: 0px 0px 15px rgb(0, 0, 0);
 }
 
 h5{
     font-size: 18px;
-    font-weight: bold;
+    font-family: 'Roboto',Arial,sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
     padding: 10px 10px 20px 10px;
     text-shadow: 0px 0px 15px rgb(3, 3, 3);
 }
@@ -21,7 +25,8 @@ h5{
 .btn{
     background-color: #a90013;
     height: 60px;
-    font-weight: bold;
+    font-family: 'Roboto',Arial,sans-serif;
+    font-weight: 700;
     font-size: 16px ;
     padding: 0px 30px;
     margin-top: 45px;
@@ -49,35 +54,58 @@ table{
     padding: 60px 0px;
 }
 
+.places{
+    font-family: 'Roboto',Arial,sans-serif;
+    font-weight: 300;
+}
+
+.places p:first-child, .places p b{
+    font-weight: 700;
+}
+
 .ideaFoundationTxt {
     margin-top: 30px;
     font-size: 18px;
 }
 
+.ideaFoundationTxt b{
+    font-weight: 700;
+}
+
 .info{
     background-color: #dfdfe6;
     padding: 0;
+    font-family: 'Roboto',Arial,sans-serif;
 }
 
 .aboutMap{
     padding: 0 0 70px 0;
-    font-family: 'Roboto',Arial,sans-serif;
-    color: #000;
     margin: 0 auto;
 }
 
 .aboutMapContainer{
     padding: 0 20px;
     margin: 0 auto;
+    font-weight: 300;
+}
+
+.aboutMapTxt{
+    font-weight: 600;
 }
 
 a{
     color: #ff8562;
     text-decoration: none;
+    font-weight: 300;
 }
 
 .author{
     margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.author b{
+    font-weight: 600;
 }
 
 .authors{
@@ -105,6 +133,7 @@ a{
 .cardContainer{
     position: relative;
     vertical-align: bottom;
+    font-family: 'Roboto',Arial,sans-serif;
 }
 
 .cardDescription{
@@ -112,6 +141,7 @@ a{
     bottom: 0;
     color: white;
     font-size: 12px;
+    font-weight: 300;
     padding: 20px;
     margin: 30px auto;
 }
@@ -212,7 +242,7 @@ a{
         font-size: 20px;
     }
 
-    .aboutAuthors, .footer-content{
+    .aboutAuthors, .footer-content, .aboutMapContainer{
         max-width: 1200px;
     }
 
