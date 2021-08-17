@@ -163,6 +163,15 @@ a{
     }
 }
 
+.cardContainer img{
+    filter: brightness(40%);
+}
+
+.cardContainer img:hover{
+    transition: all ease-in-out .25s;
+    filter: brightness(52%);
+}
+
 @media screen and (min-width: 960px){
     .aboutAuthors{
         max-width: 960px;
