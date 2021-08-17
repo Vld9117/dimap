@@ -8,12 +8,14 @@ h1{
     font-size: 30px;
     font-weight: bold;
     padding: 10px 24px;
+    text-shadow: 0px 0px 15px rgb(0, 0, 0, 0.7);
 }
 
 h5{
     font-size: 18px;
     font-weight: bold;
     padding: 10px 10px 20px 10px;
+    text-shadow: 0px 0px 15px rgb(3, 3, 3, 0.7);
 }
 
 .btn{
