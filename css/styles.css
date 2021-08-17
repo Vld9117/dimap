@@ -47,13 +47,14 @@ table{
     padding: 60px 0px;
 }
 
-.ideaFoundationTxt{
+.ideaFoundationTxt {
     margin-top: 30px;
     font-size: 18px;
 }
 
 .info{
     background-color: #dfdfe6;
+    padding: 0;
 }
 
 .aboutMap{
@@ -66,6 +67,37 @@ table{
 .aboutMapContainer{
     padding: 0 20px;
     margin: 0 auto;
+}
+
+a{
+    color: #ff8562;
+    text-decoration: none;
+}
+
+.author{
+    margin-bottom: 30px;
+}
+
+.authors{
+    font-size: 16px;
+    padding: 20px 0 0 0;
+}
+
+.aboutAuthors, .footer-content{
+    padding: 0 20px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.footerContainer{
+    background-color: #0d0d0d;
+    padding: 60px 0px 75px 0px;
+}
+
+.footer-txt{
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 @media screen and (min-width: 480px) {
@@ -100,9 +132,22 @@ table{
         font-size: 20px;
     }
 
+    .authors, .footer-txt{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 960px){
+    .aboutAuthors{
+        max-width: 960px;
+    }
 }
 
 @media screen and (min-width: 1200px){
+    .mainPic{
+        background-attachment: fixed;
+    }
+    
     h1{
         font-size: 72px;
     }
@@ -122,5 +167,13 @@ table{
 
     .ideaFoundationTxt{
         font-size: 22px;
+    }
+
+    .authors, .footer-txt{
+        font-size: 20px;
+    }
+
+    .aboutAuthors, .footer-content{
+        max-width: 1200px;
     }
 }
