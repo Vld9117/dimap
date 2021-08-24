@@ -32,6 +32,7 @@
     <meta name="Address" content="РФ, РТ, г. Нижнекамск, ул.Менделеева, д.17">
 
     <title>Цифровая карта Елабуги</title>
+    <link rel="stylesheet" href="css/reset.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -41,25 +42,19 @@
     </style>
 </head>
 <body>
-        <div class="container-fluid mainPic vh-100 d-flex flex-column">
-            <div class="row my-auto">
-                <div class="col text-center">
-                    <h5 class="text-white text-uppercase">Значимые места доступны как никогда</h5>
-                    <h1 class="text-white">Цифровая карта Елабуги</h1>
-                    <a class="btn text-white" href="#anchor1">
-                        <table class="btn-txt">
-                            <tbody>
-                                <td><span>Перейти к карте</span></td>
-                            </tbody>
-                        </table>
-                    </a>
-                </div>
+        <div class="container-100 mainPic">
+            <div style="text-align: center; color: white;">
+                <h5>ЗНАЧИМЫЕ МЕСТА ДОСТУПНЫ КАК НИКОГДА</h5>
+                <h1>Цифровая карта Елабуги</h1>
+                <form action="#anchor1">
+                    <button class="btnn">Перейти к карте</button>
+                </form>
             </div>
         </div>
 
         <hr style="margin: 0 auto; width: 90%;">
-        
-        <div class="container-fluid map" id="anchor1">
+
+        <div class="map" id="anchor1">
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A58d36d4e36cbd78940c7d2b5976626e4e4d7659211559ff97ca2f80b44860113&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
 
@@ -212,7 +207,7 @@
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
- 
+
     ym(84115192, "init", {
          clickmap:true,
          trackLinks:true,
