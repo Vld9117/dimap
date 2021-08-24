@@ -57,6 +57,10 @@ button{
 .mapDescription{
     font-size: 18px;
     margin: 30px auto;
+    text-align: center;
+    width: 100%;
+    padding: 0 0.75rem;
+    line-height: 1.5;
 }
 
 .aboutMapTxt, .aboutAuthorsTxt{
@@ -66,10 +70,15 @@ button{
 
 .places{
     font-weight: 300;
+    padding: 0 0.75rem;
 }
 
 .places p:first-child, .places p b{
     font-weight: 700;
+}
+
+.places p:first-child{
+    margin-bottom: 0.25rem;
 }
 
 .ideaFoundationTxt {
@@ -215,6 +224,11 @@ a{
 
     .cardDescription{
         padding: 20px 40px;
+    }
+
+    .mapDescription{
+        text-align: left;
+        width: 960px;
     }
 }
 
