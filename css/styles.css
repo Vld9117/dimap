@@ -8,10 +8,6 @@
     justify-content: center;
 }
 
-.container-100{
-    width: 100%;
-}
-
 h1{
     font-size: 30px;
     font-weight: 600;
@@ -71,6 +67,7 @@ button{
 .aboutMapTxt, .aboutAuthorsTxt{
     font-size: 28px;
     padding: 60px 0px;
+    text-align: center;
 }
 
 .places{
@@ -124,7 +121,9 @@ a{
 
 .author{
     margin-bottom: 30px;
+    padding: 0 0.75rem;
     font-weight: 300;
+    flex-basis: 100%;
 }
 
 .author b{
@@ -246,6 +245,14 @@ a{
 
     .ideaFoundationTxt{
         text-align: left;
+    }
+
+    .author{
+        flex-basis: 33.333333%;
+    }
+
+    .aboutMapContainer{
+        max-width: 960px;
     }
 }
 
