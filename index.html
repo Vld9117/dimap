@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#">
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <!-- seo -->
-    <meta name="description" content="Авторская карта мест, куда стоит сходить в Елабуге. Развлечения, досуг, поесть-попить - в одном месте!">
+    <meta name="description"
+        content="Авторская карта мест, куда стоит сходить в Елабуге. Развлечения, досуг, поесть-попить - в одном месте!">
     <meta name="keywords" content="елабуга, елабуга город, елабуга достопримечательности, куда сходить в Елабуге">
     <meta property="og:title" content="Карта Елабуги">
     <meta property="og:description" content="Места, куда стоит сходить!">
@@ -14,7 +16,7 @@
     <meta property="og:image:width" content="600">
     <meta property="og:image:height" content="400">
     <meta property="og:type" content="website">
-    <meta property="og:url" content= "https://vld9117.github.io/dimap/">
+    <meta property="og:url" content="https://vld9117.github.io/dimap/">
     <meta property="og:locale" content="ru_RU">
     <meta property="vk:image" content="https://vld9117.github.io/dimap/img/seo.webp">
     <meta property="vk:image:width" content="600">
@@ -39,178 +41,193 @@
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
     </style>
 </head>
+
 <body>
-        <div class="mainPic" loading="eager">
-            <div style="text-align: center; color: white;">
-                <h5>ЗНАЧИМЫЕ МЕСТА ДОСТУПНЫ КАК НИКОГДА</h5>
-                <h1>Цифровая карта Елабуги</h1>
-                <form action="#anchor1">
-                    <button class="btn">Перейти к карте</button>
-                </form>
+    <div class="mainPic" loading="eager">
+        <div style="text-align: center; color: white;">
+            <h5>ЗНАЧИМЫЕ МЕСТА ДОСТУПНЫ КАК НИКОГДА</h5>
+            <h1>Цифровая карта Елабуги</h1>
+            <form action="#anchor1">
+                <button class="btn">Перейти к карте</button>
+            </form>
+        </div>
+    </div>
+
+    <hr style="width: 90%;">
+
+    <div class="map" id="anchor1">
+        <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A58d36d4e36cbd78940c7d2b5976626e4e4d7659211559ff97ca2f80b44860113&amp;lang=ru_RU&amp;scroll=true">
+        </script>
+    </div>
+
+    <div class="mapDescription">
+        <div class="places">
+            <p class="">Основные обозначения мест:</p>
+            <p class=""><b style="color: red">Красный </b>- прогулки, фото</p>
+            <p class=""><b style="color: green">Зелёный </b>- развлечения, отдых</p>
+            <p class=""><b style="color: blue">Синий </b>- продукты/товары</p>
+            <p class=""><b style="color: rgb(243,113,209)">Розовый </b>- столовые/кафе</p>
+            <p class=""><b style="color: black">Чёрный </b>- полезные точки</p>
+        </div>
+    </div>
+
+    <!-- галерея -->
+    <div class="flex-container">
+        <div class="cardContainer">
+            <img src="img\p1.webp" loading="lazy" alt="Елабужское Городище" tabindex="0" style="width: 100%;" />
+            <div class="cardDescription">
+                <div class="cardHeader">
+                    Елабужское Городище
+                </div>
+                <br>Изумительный вид на окружающий ландшафт воодушевляет
+            </div>
+        </div>
+        <div class="cardContainer">
+            <img src="img\p2.webp" loading="lazy" alt="Памятник основателю Елабуги" tabindex="0" style="width: 100%;" />
+            <div class="cardDescription">
+                <div class="cardHeader">
+                    Памятник основателю Елабуги
+                </div>
+                <br>Превосходный памятник передаёт дух булгар сквозь время
+            </div>
+        </div>
+        <div class="cardContainer">
+            <img src="img\p3.webp" loading="lazy" alt="Вид на Кафедральный Собор" tabindex="0" style="width: 100%;" />
+            <div class="cardDescription">
+                <div class="cardHeader">
+                    Вид на Собор
+                </div>
+                <br>По Казанской можно свернуть в тихий уголок спокойствия и мира
+            </div>
+        </div>
+        <div class="cardContainer">
+            <img src="img\p4.webp" loading="lazy" alt="Шишкинские пруды" tabindex="0" style="width: 100%;" />
+            <div class="cardDescription">
+                <div class="cardHeader">
+                    Шишкинские пруды
+                </div>
+                <br>Обитель благоденствия и отдыха, одно из лучших мест для фото
+            </div>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="aboutMap">
+            <div class="aboutMapTxt">
+                <b>О карте</b>
+            </div>
+            <div class="aboutMapContainer">
+                <div class="ideaFoundationTxt">
+                    <b>Как возникла идея?</b>
+                    <br>Во время обсуждения планов на вечер в голову пришла мысль:
+                    <br>"сколько в Елабуге есть таких мест, куда стоит сходить?"
+                    <br> И задумавшись, я понял, что многие даже не слышали
+                    <br>о некоторых из них по разным причинам.
+                    <br> Да и что тут говорить: я сам некоторых могу не знать.
+                    <br>
+                    <br> Было принято решение:
+                    <br>собираем цифровую карту для студентов!
+                    <br> - Николаев Владислав
+                </div>
             </div>
         </div>
 
-        <hr style="width: 90%;">
+        <hr style="margin: 0 auto; width: 90%;">
 
-        <div class="map" id="anchor1">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A58d36d4e36cbd78940c7d2b5976626e4e4d7659211559ff97ca2f80b44860113&amp;lang=ru_RU&amp;scroll=true"></script>
-        </div>
-
-        <div class="mapDescription">
-            <div class="places">
-                <p class="">Основные обозначения мест:</p>
-                <p class=""><b style="color: red">Красный </b>- прогулки, фото</p>
-                <p class=""><b style="color: green">Зелёный </b>- развлечения, отдых</p>
-                <p class=""><b style="color: blue">Синий </b>- продукты/товары</p>
-                <p class=""><b style="color: rgb(243,113,209)">Розовый </b>- столовые/кафе</p>
-                <p class=""><b style="color: black">Чёрный </b>- полезные точки</p>
+        <div class="aboutAuthors">
+            <div class="aboutAuthorsTxt">
+                <b style="font-weight: 700;">Авторы карты</b>
             </div>
-        </div>
-
-<!-- галерея -->
-        <div class="flex-container">
-            <div class="cardContainer">
-                <img src="img\p1.webp" loading="lazy" alt="Елабужское Городище" tabindex="0" style="width: 100%;"/>
-                <div class="cardDescription">
-                    <div class="cardHeader">
-                        Елабужское Городище
-                    </div>
-                    <br>Изумительный вид на окружающий ландшафт воодушевляет
-                </div>
-            </div>
-            <div class="cardContainer">
-                <img src="img\p2.webp" loading="lazy" alt="Памятник основателю Елабуги" tabindex="0" style="width: 100%;"/>
-                <div class="cardDescription">
-                    <div class="cardHeader">
-                        Памятник основателю Елабуги
-                    </div>
-                    <br>Превосходный памятник передаёт дух булгар сквозь время
-                </div>
-            </div>
-            <div class="cardContainer">
-                <img src="img\p3.webp" loading="lazy" alt="Вид на Кафедральный Собор" tabindex="0" style="width: 100%;"/>
-                <div class="cardDescription">
-                    <div class="cardHeader">
-                        Вид на Собор
-                    </div>
-                    <br>По Казанской можно свернуть в тихий уголок спокойствия и мира
-                </div>
-            </div>
-            <div class="cardContainer">
-                <img src="img\p4.webp" loading="lazy" alt="Шишкинские пруды" tabindex="0" style="width: 100%;"/>
-                <div class="cardDescription">
-                    <div class="cardHeader">
-                        Шишкинские пруды
-                    </div>
-                    <br>Обитель благоденствия и отдыха, одно из лучших мест для фото
-                </div>
-            </div>
-        </div>
-
-        <div class="info">
-            <div class="aboutMap">
-                <div class="aboutMapTxt">
-                    <b>О карте</b>
-                </div>
-                <div class="aboutMapContainer">
-                    <div class="ideaFoundationTxt">
-                        <b>Как возникла идея?</b>
-                        <br>Во время обсуждения планов на вечер в голову пришла мысль:
-                        <br>"сколько в Елабуге есть таких мест, куда стоит сходить?"
-                        <br> И задумавшись, я понял, что многие даже не слышали
-                        <br>о некоторых из них по разным причинам.
-                        <br> Да и что тут говорить: я сам некоторых могу не знать.
+            <div class="authors">
+                <div class="flex-container" style="margin: 0 -0.75rem;">
+                    <div class="author">
+                        <b>Курлин Никита</b>
                         <br>
-                        <br> Было принято решение:
-                        <br>собираем цифровую карту для студентов!
-                        <br> - Николаев Владислав
+                        <span>Написал сайт с нуля</span>
+                        <br>
+                        <a href="https://api.whatsapp.com/send?phone=+79503090845">Написать в WhatsApp</a>
                     </div>
-                </div>
-            </div>
 
-            <hr style="margin: 0 auto; width: 90%;">
+                    <div class="author">
+                        <b>Николаев Владислав</b>
+                        <br>
+                        Составил карту и сделал сайт
+                        <br>
+                        <a href="https://www.instagram.com/sonof.sky/">@sonof.sky</a>
+                    </div>
 
-            <div class="aboutAuthors">
-                <div class="aboutAuthorsTxt">
-                    <b style="font-weight: 700;">Авторы карты</b>
-                </div>
-                <div class="authors">
-                    <div class="flex-container" style="margin: 0 -0.75rem;">
-                        <div class="author">
-                            <b>Курлин Никита</b>
-                            <br>
-                            <span>Написал сайт с нуля</span>
-                            <br>
-                            <a href="https://api.whatsapp.com/send?phone=+79503090845">Написать в WhatsApp</a>
-                        </div>
+                    <div class="author">
+                        <b>Самат Димитров</b>
+                        <br>
+                        Активно предлагал места
+                        <br>
+                        <a href="https://www.instagram.com/q.takkk/">@q.takkk</a>
+                    </div>
 
-                        <div class="author">
-                            <b>Николаев Владислав</b>
-                            <br>
-                            Составил карту и сделал сайт
-                            <br>
-                            <a href="https://www.instagram.com/sonof.sky/">@sonof.sky</a>
-                        </div>
+                    <div class="author">
+                        <b>Анна Пашина</b>
+                        <br>
+                        Внесла значимый вклад в разработку
+                        <br>
+                        <a href="https://www.instagram.com/_suhoy_donger_/">@_suhoy_donger_</a>
+                    </div>
 
-                        <div class="author">
-                            <b>Самат Димитров</b>
-                            <br>
-                            Активно предлагал места
-                            <br>
-                            <a href="https://www.instagram.com/q.takkk/">@q.takkk</a>
-                        </div>
+                    <div class="author">
+                        <b>Ольга Грахова</b>
+                        <br>
+                        Внесла Экзотические места на карту
+                        <br>
+                        <a href="https://www.instagram.com/elf_oliver/">@elf_oliver</a>
+                    </div>
 
-                        <div class="author">
-                            <b>Анна Пашина</b>
-                            <br>
-                            Внесла значимый вклад в разработку
-                            <br>
-                            <a href="https://www.instagram.com/_suhoy_donger_/">@_suhoy_donger_</a>
-                        </div>
-
-                        <div class="author">
-                            <b>Ольга Грахова</b>
-                            <br>
-                            Внесла Экзотические места на карту
-                            <br>
-                            <a href="https://www.instagram.com/elf_oliver/">@elf_oliver</a>
-                        </div>
-
-                        <div class="author">
-                            Здесь перечислены наиболее активные ребята,
-                            <br>
-                            участвовавшие в процессе разработки цифровой карты
-                            <br>
-                            Всем и каждому, кто вложился, хочу сказать "спасибо!"
-                        </div>
+                    <div class="author">
+                        Здесь перечислены наиболее активные ребята,
+                        <br>
+                        участвовавшие в процессе разработки цифровой карты
+                        <br>
+                        Всем и каждому, кто вложился, хочу сказать "спасибо!"
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <footer class="footerContainer">
-            <div class="footer-content">
-                <div class="footer-txt">
-                    Есть правки, или места, что стоит отразить на карте? Свяжись со мной по почте
-                </div>
-                <br>
-                <a href="mailto:vladik20993@gmail.com?subject=Правка в карту" style="font-size: 16px">vladik20993@gmail.com</a>
+    <footer class="footerContainer">
+        <div class="footer-content">
+            <div class="footer-txt">
+                Есть правки, или места, что стоит отразить на карте? Свяжись со мной по почте
             </div>
-        </footer>
+            <br>
+            <a href="mailto:vladik20993@gmail.com?subject=Правка в карту"
+                style="font-size: 16px">vladik20993@gmail.com</a>
+        </div>
+    </footer>
 
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <script type="text/javascript">
+        setTimeout(function () {
+            (function (m, e, t, r, i, k, a) {
+                m[i] = m[i] || function () {
+                    (m[i].a = m[i].a || []).push(arguments)
+                };
+                m[i].l = 1 * new Date();
+                k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a
+                    .parentNode.insertBefore(k, a)
+            })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-    ym(84115192, "init", {
-         clickmap:true,
-         trackLinks:true,
-         accurateTrackBounce:true
-    });
+            ym(84115192, "init", {
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true
+            });
+        }, 6000);
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/84115192" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
- <!-- /Yandex.Metrika counter -->
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/84115192" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 </body>
+
 </html>
