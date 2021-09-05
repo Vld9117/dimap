@@ -2,11 +2,14 @@
     background: url("../img/main2.jpg") center;
     background-size: cover;
     margin-bottom: 60px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1{
     font-size: 30px;
-    font-family: 'Roboto',Arial,sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
     padding: 10px 24px;
@@ -15,7 +18,6 @@ h1{
 
 h5{
     font-size: 18px;
-    font-family: 'Roboto',Arial,sans-serif;
     font-weight: 600;
     letter-spacing: 2px;
     padding: 10px 10px 20px 10px;
@@ -23,22 +25,21 @@ h5{
 }
 
 .btn{
+    margin: 45px auto auto 0;
+    color: white;
+    border-radius: 5px;
     background-color: #a90013;
     height: 60px;
-    font-family: 'Roboto',Arial,sans-serif;
     font-weight: 700;
     font-size: 16px ;
     padding: 0px 30px;
-    margin-top: 45px;
 }
 
-table{
-    width: 100%;
-    height: 100%;
+.btn:hover{
+    filter: brightness(0.8);
 }
 
 .map{
-    width: 100%;
     height: 65vh;
     margin-top: 30px;
     padding: 0px;
@@ -47,20 +48,33 @@ table{
 .mapDescription{
     font-size: 18px;
     margin: 30px auto;
+    text-align: center;
+    padding: 0 0.75rem;
+    line-height: 1.5;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .aboutMapTxt, .aboutAuthorsTxt{
     font-size: 28px;
     padding: 60px 0px;
+    text-align: center;
 }
 
 .places{
-    font-family: 'Roboto',Arial,sans-serif;
     font-weight: 300;
+    padding: 0 0.75rem;
 }
 
 .places p:first-child, .places p b{
     font-weight: 700;
+}
+
+.places p:first-child{
+    margin-bottom: 0.25rem;
 }
 
 .ideaFoundationTxt {
@@ -74,13 +88,12 @@ table{
 
 .info{
     background-color: #dfdfe6;
-    padding: 0;
-    font-family: 'Roboto',Arial,sans-serif;
 }
 
 .aboutMap{
-    padding: 0 0 70px 0;
+    padding-bottom: 70px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .aboutMapContainer{
@@ -101,7 +114,9 @@ a{
 
 .author{
     margin-bottom: 30px;
+    padding: 0 0.75rem;
     font-weight: 300;
+    flex-basis: 100%;
 }
 
 .author b{
@@ -122,6 +137,7 @@ a{
 .footerContainer{
     background-color: #0d0d0d;
     padding: 60px 0px 75px 0px;
+    text-align: center;
 }
 
 .footer-txt{
@@ -133,7 +149,17 @@ a{
 .cardContainer{
     position: relative;
     vertical-align: bottom;
-    font-family: 'Roboto',Arial,sans-serif;
+    flex-basis: 100%;
+}
+
+.cardContainer img{
+    vertical-align: middle;
+    filter: brightness(40%);
+}
+
+.cardContainer img:hover{
+    transition: all ease-in-out .25s;
+    filter: brightness(52%);
 }
 
 .cardDescription{
@@ -164,7 +190,6 @@ a{
     }
 
     .btn{
-        font-size: 16px ;
         padding: 0px 60px;
     }
 
@@ -193,22 +218,35 @@ a{
     }
 }
 
-.cardContainer img{
-    filter: brightness(40%);
-}
-
-.cardContainer img:hover{
-    transition: all ease-in-out .25s;
-    filter: brightness(52%);
-}
-
 @media screen and (min-width: 960px){
     .aboutAuthors{
         max-width: 960px;
     }
 
+    .cardContainer{
+        flex-basis: 50%;
+    }
+
     .cardDescription{
         padding: 20px 40px;
+
+    }
+
+    .mapDescription{
+        text-align: left;
+        width: 960px;
+    }
+
+    .ideaFoundationTxt{
+        text-align: left;
+    }
+
+    .author{
+        flex-basis: 33.333333%;
+    }
+
+    .aboutMapContainer{
+        max-width: 960px;
     }
 }
 
